@@ -13,7 +13,7 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		3722620011BEB4AE000A8E9E /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E769711A1E7F500CC43AD /* SpeechKit.framework */; };
-		37A7454111BDA3E000D02E62 /* DMVocalizerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A7453E11BDA3E000D02E62 /* DMVocalizerAppDelegate.m */; };
+		37A7454111BDA3E000D02E62 /* SpeakerTeacherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A7453E11BDA3E000D02E62 /* SpeakerTeacherAppDelegate.m */; };
 		37A7454211BDA3E000D02E62 /* DMVocalizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A7454011BDA3E000D02E62 /* DMVocalizerViewController.m */; };
 		37A7457A11BDA6FC00D02E62 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A7457911BDA6FC00D02E62 /* AppIcon.png */; };
 		37A7459211BDA7A600D02E62 /* DMVocalizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37A7454411BDA3F900D02E62 /* DMVocalizerViewController.xib */; };
@@ -36,13 +36,13 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		37A7453D11BDA3E000D02E62 /* DMVocalizerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMVocalizerAppDelegate.h; sourceTree = "<group>"; };
-		37A7453E11BDA3E000D02E62 /* DMVocalizerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMVocalizerAppDelegate.m; sourceTree = "<group>"; };
+		37A7453D11BDA3E000D02E62 /* SpeakerTeacherAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerTeacherAppDelegate.h; sourceTree = "<group>"; };
+		37A7453E11BDA3E000D02E62 /* SpeakerTeacherAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerTeacherAppDelegate.m; sourceTree = "<group>"; };
 		37A7453F11BDA3E000D02E62 /* DMVocalizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMVocalizerViewController.h; sourceTree = "<group>"; };
 		37A7454011BDA3E000D02E62 /* DMVocalizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMVocalizerViewController.m; sourceTree = "<group>"; };
-		37A7454311BDA3F900D02E62 /* DMVocalizer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DMVocalizer-Info.plist"; sourceTree = "<group>"; };
+		37A7454311BDA3F900D02E62 /* SpeakerTeacher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpeakerTeacher-Info.plist"; sourceTree = "<group>"; };
 		37A7454411BDA3F900D02E62 /* DMVocalizerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMVocalizerViewController.xib; sourceTree = "<group>"; };
-		37A7455211BDA4DB00D02E62 /* DMVocalizer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMVocalizer_Prefix.pch; sourceTree = "<group>"; };
+		37A7455211BDA4DB00D02E62 /* SpeakerTeacher_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerTeacher_Prefix.pch; sourceTree = "<group>"; };
 		37A7457911BDA6FC00D02E62 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		923528AC13A11B57004D17F4 /* DMVocalizerViewController_Debug.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMVocalizerViewController_Debug.xib; sourceTree = "<group>"; };
 		923528AD13A11B57004D17F4 /* MainWindow_Debug.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_Debug.xib; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				A6C315A01A883711007D6ADC /* Recognizer */,
-				37A7453D11BDA3E000D02E62 /* DMVocalizerAppDelegate.h */,
-				37A7453E11BDA3E000D02E62 /* DMVocalizerAppDelegate.m */,
+				37A7453D11BDA3E000D02E62 /* SpeakerTeacherAppDelegate.h */,
+				37A7453E11BDA3E000D02E62 /* SpeakerTeacherAppDelegate.m */,
 				37A7453F11BDA3E000D02E62 /* DMVocalizerViewController.h */,
 				37A7454011BDA3E000D02E62 /* DMVocalizerViewController.m */,
 			);
@@ -114,7 +114,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				37A7455211BDA4DB00D02E62 /* DMVocalizer_Prefix.pch */,
+				37A7455211BDA4DB00D02E62 /* SpeakerTeacher_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				37A7457911BDA6FC00D02E62 /* AppIcon.png */,
-				37A7454311BDA3F900D02E62 /* DMVocalizer-Info.plist */,
+				37A7454311BDA3F900D02E62 /* SpeakerTeacher-Info.plist */,
 				923528AC13A11B57004D17F4 /* DMVocalizerViewController_Debug.xib */,
 				923528AD13A11B57004D17F4 /* MainWindow_Debug.xib */,
 				37A7454411BDA3F900D02E62 /* DMVocalizerViewController.xib */,
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* DMVocalizer */ = {
+		1D6058900D05DD3D006BFB54 /* SpeakerTeacher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "DMVocalizer" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SpeakerTeacher" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -176,7 +176,7 @@
 			);
 			dependencies = (
 			);
-			name = DMVocalizer;
+			name = SpeakerTeacher;
 			productName = DMVocalizer;
 			productReference = 1D6058910D05DD3D006BFB54 /* Vocalizer.app */;
 			productType = "com.apple.product-type.application";
@@ -189,7 +189,7 @@
 			attributes = {
 				LastUpgradeCheck = 0610;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DMVocalizer" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpeakerTeacher" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -203,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* DMVocalizer */,
+				1D6058900D05DD3D006BFB54 /* SpeakerTeacher */,
 			);
 		};
 /* End PBXProject section */
@@ -232,7 +232,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				A6C3159E1A88370C007D6ADC /* DMRecognizerAppDelegate.m in Sources */,
-				37A7454111BDA3E000D02E62 /* DMVocalizerAppDelegate.m in Sources */,
+				37A7454111BDA3E000D02E62 /* SpeakerTeacherAppDelegate.m in Sources */,
 				37A7454211BDA3E000D02E62 /* DMVocalizerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,10 +252,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DMVocalizer_Prefix.pch;
+				GCC_PREFIX_HEADER = SpeakerTeacher_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "DMVocalizer-Info.plist";
+				INFOPLIST_FILE = "SpeakerTeacher-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				"OTHER_CFLAGS[arch=armv6]" = "-mno-thumb";
 				"OTHER_CFLAGS[arch=armv7]" = "";
@@ -273,10 +273,10 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DMVocalizer_Prefix.pch;
+				GCC_PREFIX_HEADER = SpeakerTeacher_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "DMVocalizer-Info.plist";
+				INFOPLIST_FILE = "SpeakerTeacher-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				"OTHER_CFLAGS[arch=armv6]" = (
 					"-DNS_BLOCK_ASSERTIONS=1",
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "DMVocalizer" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SpeakerTeacher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DMVocalizer" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpeakerTeacher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

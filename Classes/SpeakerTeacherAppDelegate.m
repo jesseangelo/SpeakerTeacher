@@ -23,10 +23,10 @@
 // trademarks referenced herein are the property of their respective owners.
 //
 
-#import "DMVocalizerAppDelegate.h"
+#import "SpeakerTeacherAppDelegate.h"
 #import "DMVocalizerViewController.h"
 
-@implementation DMVocalizerAppDelegate
+@implementation SpeakerTeacherAppDelegate
 
 @synthesize window;
 @synthesize viewController;
